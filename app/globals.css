@@ -27,3 +27,16 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
+
+/* SVG Arrow styling */
+.arrow-svg {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(0.8) contrast(0.8);
+  transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.arrow-svg:hover {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(1.2) contrast(1.2);
+  transform: translateX(4px);
+}

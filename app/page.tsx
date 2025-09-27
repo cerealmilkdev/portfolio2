@@ -13,7 +13,7 @@ export default function Home() {
             {">"} Développeur FullStack
           </p>
           <p className="text-xs sm:text-sm text-zinc-500 font-mono cursor-default">
-            @boutdaguap
+            @cerealmilkdev
           </p>
         </div>
       </header>
@@ -130,22 +130,22 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                n8n X automation
+                n8n automation
               </a>
               <button className="text-neutral-400 hover:text-neutral-200 transition-colors duration-200 font-sans text-xs cursor-pointer">
                 Voir plus
               </button>
             </div>
           </div>
-          <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] transform flex items-center justify-center text-white font-semibold">
+          <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] transform flex items-center justify-center text-white font-semibold group cursor-pointer">
             <div className="flex items-center space-x-2">
-              <span className="font-sans cursor-pointer">Contact</span>
+              <span className="font-sans">Contact</span>
               <Image
                 src="/img/arrow-right-svgrepo-com.svg"
                 alt="Arrow"
                 width={26}
                 height={26}
-                className="arrow-svg"
+                className="arrow-svg group-hover:translate-x-2 transition-transform duration-500 ease-out"
               />
             </div>
           </div>
@@ -161,14 +161,6 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           GitHub
-        </a>
-        <a
-          href="https://linkedin.com"
-          className="text-gray-400 hover:text-white transition-colors duration-200 font-sans"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
         </a>
         <a
           href="mailto:contact@example.com"

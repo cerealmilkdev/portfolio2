@@ -4,11 +4,13 @@ export default function Home() {
   return (
     <div className="h-screen bg-background text-foreground flex flex-col">
       {/* Header - Nom et sous-titres */}
-      <header className="flex flex-col items-center justify-center pt-8">
-        <h1 className="text-4xl font-semibold mb-2">Jonathan</h1>
+      <header className="flex flex-col items-center justify-center pt-4">
+        <h1 className="text-4xl font-semibold mb-2 font-sans">Jonathan</h1>
         <div className="text-center space-y-1">
-          <p className="text-lg text-gray-300">{">"} Développeur FullStack</p>
-          <p className="text-sm text-zinc-500">@boutdaguap</p>
+          <p className="text-lg text-gray-300 font-mono">
+            {">"} Développeur FullStack
+          </p>
+          <p className="text-sm text-zinc-500 font-mono">@boutdaguap</p>
         </div>
       </header>
 
@@ -18,21 +20,23 @@ export default function Home() {
           {/* Ligne 1 */}
           <div className="bg-neutral-800 border border-neutral-700 hover:border-neutral-500 col-span-2 rounded-lg flex items-center justify-center text-white font-semibold">
             <div className="text-left p-4 w-full max-w-xl">
-              <div className="text-lg font-semibold">Tech stack {"{}"}</div>
+              <div className="text-lg font-semibold font-mono">
+                Tech stack {"{}"}
+              </div>
               <div className="mt-2">
-                <div className="text-sm uppercase tracking-wide text-neutral-200">
+                <div className="text-sm uppercase tracking-wide text-neutral-200 font-mono">
                   Frontend
                 </div>
-                <ul className="mt-1 text-sm text-neutral-300 space-y-1 list-none list-inside font-normal">
+                <ul className="mt-1 text-sm text-neutral-300 space-y-1 list-none list-inside font-sans">
                   <li>JavaScript - TypeScript</li>
                   <li>React (Next.js) · Tailwind CSS</li>
                 </ul>
               </div>
               <div className="mt-3">
-                <div className="text-sm uppercase tracking-wide text-neutral-200">
+                <div className="text-sm uppercase tracking-wide text-neutral-200 font-mono">
                   Backend
                 </div>
-                <ul className="mt-1 text-sm text-neutral-300 space-y-1 list-none list-inside font-normal">
+                <ul className="mt-1 text-sm text-neutral-300 space-y-1 list-none list-inside font-sans">
                   <li>Node.js (Express) · REST</li>
                   <li>PostgreSQL · Prisma</li>
                 </ul>
@@ -51,13 +55,13 @@ export default function Home() {
               className="rounded-full object-cover mb-3"
             />
             <div className="text-center">
-              <div className="text-lg font-bold text-neutral-100 mb-1">
+              <div className="text-lg font-bold text-neutral-100 mb-1 font-sans">
                 @boutdaguap
               </div>
-              <div className="text-xs text-neutral-300 mb-2">
+              <div className="text-xs text-neutral-300 mb-2 font-mono">
                 Développeur FullStack
               </div>
-              <div className="text-xs text-neutral-300">
+              <div className="text-xs text-neutral-300 font-sans">
                 <div>Montréal, Canada</div>
                 <div>💻 3 ans d&apos;expérience</div>
               </div>
@@ -67,27 +71,31 @@ export default function Home() {
           {/* Ligne 2 */}
           <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] rounded-tr-md flex items-center justify-center text-white font-semibold">
             <div className="text-left p-4 w-full">
-              <div className="text-lg font-semibold mb-3">Formation 🎓</div>
+              <div className="text-lg font-semibold mb-3 font-mono">
+                Formation 🎓
+              </div>
               <div className="space-y-3">
                 <div>
-                  <div className="text-sm font-medium text-neutral-200">
+                  <div className="text-sm font-medium text-neutral-200 font-mono">
                     Formation React
                   </div>
-                  <div className="text-xs text-neutral-400">
+                  <div className="text-xs text-neutral-400 font-sans">
                     Le Wagon · 2022
                   </div>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-neutral-200">
+                  <div className="text-sm font-medium text-neutral-200 font-mono">
                     CISCO CCNA +
                   </div>
-                  <div className="text-xs text-neutral-400">Udemy · 2024</div>
+                  <div className="text-xs text-neutral-400 font-sans">
+                    Udemy · 2024
+                  </div>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-neutral-200">
+                  <div className="text-sm font-medium text-neutral-200 font-mono">
                     Certification AWS Cloud Practitioner
                   </div>
-                  <div className="text-xs text-neutral-400">
+                  <div className="text-xs text-neutral-400 font-sans">
                     Amazon Web Services · 2024
                   </div>
                 </div>
@@ -95,10 +103,38 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] transform flex items-center justify-center text-white font-semibold">
-            Contact
+            <span className="font-sans">Contact</span>
           </div>
-          <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] rounded-2xl flex items-center justify-center text-white font-semibold">
-            Projects
+          <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] rounded-2xl flex flex-col items-center justify-center text-white font-semibold p-4">
+            <div className="flex flex-col items-center space-y-3">
+              <a
+                href="https://makesocial.me"
+                className="text-neutral-200 hover:text-white transition-colors duration-200 font-mono text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                makesocial.me
+              </a>
+              <a
+                href="https://makesocial.me"
+                className="text-neutral-200 hover:text-white transition-colors duration-200 font-mono text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                montreal space
+              </a>
+              <a
+                href="https://makesocial.me"
+                className="text-neutral-200 hover:text-white transition-colors duration-200 font-mono text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                n8n X automation
+              </a>
+              <button className="text-neutral-400 hover:text-neutral-200 transition-colors duration-200 font-sans text-xs">
+                Voir plus
+              </button>
+            </div>
           </div>
         </div>
       </main>
@@ -107,7 +143,7 @@ export default function Home() {
       <footer className="flex justify-center items-center gap-6 pb-8">
         <a
           href="https://github.com/cerealmilkdev"
-          className="text-gray-400 hover:text-white transition-colors duration-200"
+          className="text-gray-400 hover:text-white transition-colors duration-200 font-sans"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -115,7 +151,7 @@ export default function Home() {
         </a>
         <a
           href="https://linkedin.com"
-          className="text-gray-400 hover:text-white transition-colors duration-200"
+          className="text-gray-400 hover:text-white transition-colors duration-200 font-sans"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -123,13 +159,13 @@ export default function Home() {
         </a>
         <a
           href="mailto:contact@example.com"
-          className="text-gray-400 hover:text-white transition-colors duration-200"
+          className="text-gray-400 hover:text-white transition-colors duration-200 font-sans"
         >
           Email
         </a>
         <a
           href="/cv.pdf"
-          className="text-gray-400 hover:text-white transition-colors duration-200"
+          className="text-gray-400 hover:text-white transition-colors duration-200 font-sans"
           target="_blank"
           rel="noopener noreferrer"
         >

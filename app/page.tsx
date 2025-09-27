@@ -2,23 +2,27 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-background text-foreground flex flex-col">
+    <div className="min-h-screen bg-background text-foreground flex flex-col">
       {/* Header - Nom et sous-titres */}
-      <header className="flex flex-col items-center justify-center pt-4">
-        <h1 className="text-4xl font-semibold mb-2 font-sans">Jonathan</h1>
+      <header className="flex flex-col items-center justify-center pt-4 px-4">
+        <h1 className="text-3xl sm:text-4xl font-semibold mb-2 font-sans cursor-default">
+          Jonathan
+        </h1>
         <div className="text-center space-y-1">
-          <p className="text-lg text-gray-300 font-mono">
+          <p className="text-base sm:text-lg text-gray-300 font-mono cursor-default">
             {">"} Développeur FullStack
           </p>
-          <p className="text-sm text-zinc-500 font-mono">@boutdaguap</p>
+          <p className="text-xs sm:text-sm text-zinc-500 font-mono cursor-default">
+            @boutdaguap
+          </p>
         </div>
       </header>
 
-      {/* Grid principale - 6 éléments sur 2 lignes */}
-      <main className="flex-1 px-8 py-12">
-        <div className="grid grid-cols-3 grid-rows-2 gap-3 h-full max-w-4xl mx-auto">
+      {/* Grid principale - Responsive */}
+      <main className="flex-1 px-4 sm:px-8 py-6 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-3 h-full max-w-4xl mx-auto">
           {/* Ligne 1 */}
-          <div className="bg-neutral-800 border border-neutral-700 hover:border-neutral-500 col-span-2 rounded-lg flex items-center justify-center text-white font-semibold">
+          <div className="bg-neutral-800 border border-neutral-700 hover:border-neutral-500 col-span-1 sm:col-span-2 lg:col-span-2 rounded-lg flex items-center justify-center text-white font-semibold">
             <div className="text-left p-4 w-full max-w-xl">
               <div className="text-lg font-semibold font-mono cursor-default">
                 Tech stack {"{}"}
@@ -56,7 +60,7 @@ export default function Home() {
             />
             <div className="text-center">
               <div className="text-lg font-bold text-neutral-100 mb-1 font-sans">
-                @boutdaguap
+                @cerealmilkdev
               </div>
               <div className="text-xs text-neutral-300 mb-2 font-mono">
                 Développeur FullStack
@@ -149,7 +153,7 @@ export default function Home() {
       </main>
 
       {/* Footer - Liens */}
-      <footer className="flex justify-center items-center gap-6 pb-8">
+      <footer className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 pb-6 sm:pb-8 px-4">
         <a
           href="https://github.com/cerealmilkdev"
           className="text-gray-400 hover:text-white transition-colors duration-200 font-sans"

@@ -6,7 +6,7 @@ export default function Home() {
       {/* Header - Nom et sous-titres */}
       <header className="flex flex-col items-center justify-center pt-2 px-4">
         <h1 className="text-3xl sm:text-4xl font-semibold mb-2 font-sans cursor-default">
-          Jonathan
+          cerealmilkdev
         </h1>
         <div className="text-center space-y-1">
           <p className="text-base sm:text-lg text-gray-300 font-mono cursor-default">

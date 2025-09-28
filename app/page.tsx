@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       {/* Header - Nom et sous-titres */}
-      <header className="flex flex-col items-center justify-center pt-4 px-4">
+      <header className="flex flex-col items-center justify-center pt-2 px-4">
         <h1 className="text-3xl sm:text-4xl font-semibold mb-2 font-sans cursor-default">
           Jonathan
         </h1>
@@ -15,14 +15,18 @@ export default function Home() {
           <p className="text-xs sm:text-sm text-zinc-500 font-mono cursor-default">
             @cerealmilkdev
           </p>
+          <div className="flex items-center justify-center space-x-2 mt-2">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-xs text-green-400 font-mono">Disponible</span>
+          </div>
         </div>
       </header>
 
       {/* Grid principale - Responsive */}
-      <main className="flex-1 px-4 sm:px-8 py-6 sm:py-12">
+      <main className="flex-1 px-4 sm:px-8 py-4 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-auto gap-3 h-full max-w-4xl mx-auto">
           {/* Ligne 1 */}
-          <div className="bg-neutral-800 border border-neutral-700 hover:border-neutral-500 col-span-1 sm:col-span-2 lg:col-span-2 rounded-lg flex items-center justify-between text-white font-semibold p-4">
+          <div className="bg-neutral-800 border border-neutral-700 hover:border-neutral-500 col-span-1 sm:col-span-2 lg:col-span-2 rounded-lg flex items-center justify-between text-white font-semibold p-3">
             <div className="text-left w-full max-w-xl">
               <div className="text-lg font-semibold font-mono cursor-default">
                 Tech stack {"{}"}
@@ -188,16 +192,32 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] transform flex items-center justify-center text-white font-semibold group cursor-pointer">
-            <div className="flex items-center space-x-2">
-              <span className="font-sans">Contact</span>
-              <Image
-                src="/img/arrow-right-svgrepo-com.svg"
-                alt="Arrow"
-                width={26}
-                height={26}
-                className="arrow-svg group-hover:translate-x-2 transition-transform duration-200 ease-out"
-              />
+          <div className="bg-neutral-800 border-neutral-600 hover:border-neutral-500 border-[0.5px] transform flex flex-col items-center justify-center text-white font-semibold p-4 group cursor-pointer">
+            <div className="text-center space-y-3">
+              <div className="flex items-center justify-center space-x-2">
+                <span className="font-sans text-lg">Contact</span>
+                <Image
+                  src="/img/arrow-right-svgrepo-com.svg"
+                  alt="Arrow"
+                  width={20}
+                  height={20}
+                  className="arrow-svg group-hover:translate-x-2 transition-transform duration-200 ease-out"
+                />
+              </div>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center justify-center space-x-2 text-neutral-300 hover:text-white transition-colors duration-200 font-mono">
+                  <span>📧</span>
+                  <span>adminms@makesocial.me</span>
+                </div>
+                <div className="flex items-center justify-center space-x-2 text-neutral-300 hover:text-white transition-colors duration-200 font-mono">
+                  <span>🌐</span>
+                  <span>makesocial.me</span>
+                </div>
+                <div className="flex items-center justify-center space-x-2 text-neutral-300 hover:text-white transition-colors duration-200 font-mono">
+                  <span>🐦</span>
+                  <span>@cerealmilkdev</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

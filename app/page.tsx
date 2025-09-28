@@ -136,10 +136,10 @@ export default function Home() {
               <div className="space-y-3">
                 <div>
                   <div className="text-sm font-medium text-neutral-200 font-mono">
-                    Formation React
+                    Microsoft Azure AZ-900
                   </div>
                   <div className="text-xs text-neutral-400 font-sans">
-                    Le Wagon · 2022
+                    Microsoft · 2022
                   </div>
                 </div>
                 <div>

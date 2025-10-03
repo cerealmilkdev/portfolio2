@@ -172,12 +172,12 @@ export default function Home() {
                 makesocial.me
               </a>
               <a
-                href="https://makesocial.me"
+                href="https://freemadagascar.vercel.app/"
                 className="text-neutral-200 hover:text-white transition-colors duration-200 font-mono text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                montreal space
+                freemdg
               </a>
               <a
                 href="https://makesocial.me"

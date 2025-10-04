@@ -172,20 +172,20 @@ export default function Home() {
                 makesocial.me
               </a>
               <a
-                href="https://freemadagascar.vercel.app/"
+                href="https://ms1-ten.vercel.app/"
                 className="text-neutral-200 hover:text-white transition-colors duration-200 font-mono text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                freemdg
+                GBU Inc.
               </a>
               <a
-                href="https://makesocial.me"
+                href="https://github.com/cerealmilkdev/MS_BOT_OPENAI_TELEGRAM"
                 className="text-neutral-200 hover:text-white transition-colors duration-200 font-mono text-sm"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                n8n automation
+                Telegram OpenAI Bot
               </a>
               <button className="text-neutral-400 hover:text-neutral-200 transition-colors duration-200 font-sans text-xs cursor-pointer">
                 Voir plus

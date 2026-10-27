@@ -283,14 +283,6 @@ export default function Home() {
         >
           Email
         </a>
-        <a
-          href="/cv.pdf"
-          className="text-[10px] font-mono text-neutral-700 hover:text-neutral-400 transition-colors duration-200 uppercase tracking-widest"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CV PDF
-        </a>
       </footer>
     </div>
   );

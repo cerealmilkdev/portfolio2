@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# portfolio2 — webfolio
 
-## Getting Started
+Portfolio personnel : **une seule page**, thème sombre, en grille de cartes (bento).
 
-First, run the development server:
+**En ligne :** https://websitefolio.vercel.app
+
+---
+
+## Contenu de la page
+
+| Bloc | Détail |
+|---|---|
+| **Tech Stack** | Frontend : JavaScript — TypeScript, Next.js · TailwindCSS. Backend : Node.js (Express) · Python, PostgreSQL · Prisma |
+| **Profil** | Photo, localisation (Montréal, Canada), années d'expérience, badge « Disponible » |
+| **Formation** | Microsoft Azure AZ-900 (2022), CISCO CCNA+ (2024), AWS Cloud Practitioner (2024) |
+| **Projets** | makesocial.me, GBU Inc., Telegram OpenAI Bot |
+| **Contact** | E-mail, site, X — plus un lien CV PDF en pied de page |
+
+---
+
+## Stack technique
+
+- **Next.js** (App Router) · **React** · **TypeScript**
+- **TailwindCSS v4** (via `@tailwindcss/postcss`)
+- **ESLint** (`eslint-config-next`)
+- Typographie : **Inter** via `next/font`, police mono **JetBrains Mono** (auto-hébergée dans `public/fonts`)
+
+Aucune base de données, aucune route serveur : la page est **entièrement statique** et son contenu vit dans `app/page.tsx`.
+
+---
+
+## Lancer en local
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Autres scripts :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # build de production
+npm start       # sert le build
+npm run lint    # ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Déploiement
 
-To learn more about Next.js, take a look at the following resources:
+Hébergé sur **Vercel**, déploiement automatique depuis la branche `main`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes d'architecture
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Le thème sombre est forcé : `className="dark"` sur la balise `<html>` (`app/layout.tsx`).
+- La texture de points en arrière-plan est un `radial-gradient` fixe, pas une image.
+- Les logos de technos sont en niveaux de gris (`grayscale`) et remontent en opacité au survol du bloc.
+- Le contenu est en français (`<html lang="fr">`) : les blocs sont des constantes JSX dans `app/page.tsx`, il n'y a pas de CMS.

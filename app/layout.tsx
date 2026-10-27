@@ -9,8 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "cerealmilkdev",
-  description: "cerealmilkdev's webfolio",
+  title: "cerealmilkdev — Développeur FullStack",
+  description:
+    "Portfolio de cerealmilkdev, développeur FullStack : Next.js, TypeScript, Node.js, Python, PostgreSQL. Projets, parcours et contact.",
 };
 
 export default function RootLayout({
